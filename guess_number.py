@@ -8,14 +8,14 @@ def guess_number():
     back = 1000
     init = 1
     times_count = 0
-    x = input('我想了一个1~1000之间的整数，kekeke你猜猜是多少：')
+    x = input('我想了一个1~1000之间的整数，你猜猜是多少：')
 
     while True:
         if x.isdigit():
             x = int(x)
             if x >= 1 and x <= 1000:
                 if numbers[x - 1] == f'{answer}':
-                    print(f'你用了{times_count + 1}次，才猜对:(  遅い！')
+                    print(f'你用了{times_count + 1}次才猜对！')
                     input('********按任意键退出********')
                     break
 
